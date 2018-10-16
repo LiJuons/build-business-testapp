@@ -1,0 +1,122 @@
+$header-width: 1024px;
+$photo-height: 288px;
+
+$build-your-text-color: #fdfdfd;
+$business-text-color: #F6FE00;
+$dark-blue: #1C1C1D;
+
+.header-container {
+    height: 576px;	
+    width: $header-width;	
+    background-color: $dark-blue;
+}
+
+.build-your-business {
+    position: absolute;
+    padding: 226px 0 0 77px;
+    height: 225px;
+    color: $business-text-color;
+    font-size: 130px;
+    font-weight: bold;
+    line-height: 100px;
+}
+
+.title-1st-line {
+    color: $build-your-text-color;
+    font-size: 98px;
+    font-weight: bold;
+}
+
+.photo-container {
+    float: right;
+    width: 600px;
+}
+
+#photo1, #photo2, #photo3, #photo4 {
+    float: right;
+    height: $photo-height;
+}
+
+#photo1 {
+    width: 381px;	
+    background: linear-gradient(270deg, rgba(28,28,29,0) 0%, $dark-blue 100%);
+}
+
+#photo3 {
+	width: 500px;
+	background: linear-gradient(270deg, rgba(28,28,29,0) 0%, $dark-blue 100%);
+}
+
+.header-line {
+    position: absolute;
+    margin-top: 480px;
+    height: 13px;
+    background: linear-gradient(142.44deg, #7038E4 0%, #4938E4 100%);
+  }
+  .header-line-enter {
+    z-index: 1;
+    opacity: 1;
+    width: 0;
+    &.header-line-enter-active {
+      z-index: 1;
+      width: $header-width;
+      transition: width 900ms linear;
+    }
+  }
+  .header-line-enter-done {
+    width: $header-width;
+  }
+
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
+}
+.fade-enter-active {
+    opacity: 1;
+    transition: opacity 1600ms;
+}
+.fade-exit {
+    opacity: 1;
+    z-index: 1;
+}
+.fade-exit-active {
+    opacity: 0;
+    transition: opacity 1600ms;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header-container {
+        width: 100vw;
+    }
+    .header-line-enter.header-line-enter-active, .header-line-enter-done {
+        width: 100%;
+    }
+    .build-your-business {
+        margin: 0;
+        margin-left: 60px;
+        padding-left: 20px;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .build-your-business {
+        margin-left: 20px;
+        padding-left: 20px;
+        font-size: 92px;
+        line-height: 68px;
+    }
+    .title-1st-line {
+        font-size: 68px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .build-your-business {
+        margin-left: 10px;
+        padding-left: 5px;
+        font-size: 74px;
+        line-height: 54px;
+    }
+    .title-1st-line {
+        font-size: 54px;
+    }
+}

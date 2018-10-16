@@ -1,0 +1,28 @@
+.projects-container {
+	font-size: 0;
+}
+
+.projects-list>div{
+	display: inline-block;
+}
+
+.our-projects {
+  margin: 96px auto;
+	height: 55px;
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 55px;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	.projects-container {
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (max-width: 512px) {
+	.projects-container {
+		margin-bottom: 0;
+	}
+}

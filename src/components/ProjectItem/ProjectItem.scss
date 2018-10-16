@@ -1,0 +1,111 @@
+$white-color: #FFFFFF;
+
+.hover-block {
+  position: absolute;
+  height: 359px;
+  width: 512px;
+  background: linear-gradient(142.44deg, rgba(113, 56, 228, 0.7) 0%, #4938E4 100%);
+}
+
+.hover-text {
+	margin: 20px 35px 0 35px;
+	height: 225px;
+	width: 442px;
+	color: $white-color;
+	font-family: "Noto Sans";
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.hover-project-name {
+	margin: 33px 0 0 35px; 
+	height: 37px;
+	width: 214px;
+	color: #FDFDFD;
+	font-family: "Noto Sans";
+	font-size: 27px;
+	font-weight: bold;
+	line-height: 37px;
+}
+
+.project-name {
+  position: absolute;
+  margin: 294px 0 28px 35px;
+	height: 37px;
+	width: 214px;
+	color: $white-color;
+	font-family: "Noto Sans";
+	font-size: 27px;
+	font-weight: bold;
+	line-height: 37px;
+}
+
+@media only screen and (max-width: 1024px) {
+	.projectImg, .hover-block {
+		height: 300px;
+		width: 500px;
+		margin-left: calc((100vw - 500px) / 2);
+	}
+	.hover-text, .hover-project-name {
+		margin-top: 20px;
+		margin-left: calc((100vw - 500px) / 2 - 140px);
+	}
+	.hover-text {
+		margin-top: 0;
+		height: 250px;
+		width: 300px;
+		font-size: 15px;
+		line-height: 16px;
+	}
+	.hover-project-name {
+		font-size: 20px;
+	}
+	.project-name {
+		margin-top: 150px;
+		margin-left: calc((100vw - 320px) / 2 + 35px);
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.projectImg, .hover-block, .hover-text, .hover-project-name {
+		margin-left: calc((100vw - 512px) / 2);
+	}
+	.project-name {
+		margin-left: calc((100vw - 512px) / 2 + 35px);
+	}
+}
+
+@media only screen and (max-width: 512px) {
+	.projectImg, .hover-block {
+		height: 224px;
+		width: 320px;
+		margin-left: calc((100vw - 320px) / 2);
+	}
+	.hover-text, .hover-project-name {
+		margin-top: 10px;
+		margin-left: calc((100vw - 320px) / 2 - 30px);
+	}
+	.hover-text {
+		margin-top: 0;
+		height: 150px;
+		width: 250px;
+		font-size: 12px;
+		line-height: 14px;
+	}
+	.hover-project-name {
+		font-size: 20px;
+	}
+	.project-name {
+		margin-top: 150px;
+		margin-left: calc((100vw - 320px) / 2 + 35px);
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	.hover-text, .hover-project-name {
+		margin-top: 5px;
+		margin-left: calc((100vw - 320px) / 2 + 10px);
+	}
+
+}

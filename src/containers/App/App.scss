@@ -1,0 +1,21 @@
+$container-width: 1024px;
+$margin-sides: calc((100vw - 1024px) / 2);
+
+.app-container {
+  height: 4498px;
+  width: $container-width;
+  background-color: #FFF;
+  margin-left: $margin-sides;
+  margin-right: $margin-sides;
+}
+
+@media only screen and (max-width: 1024px) {
+  .app-container {
+    display: flex;
+    flex-wrap: wrap;
+      width: 100%;
+      margin: 0;
+  }
+}
+
+
